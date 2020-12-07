@@ -1,8 +1,9 @@
 """This script imports the necessary data, e.g. ASCII art and list of country-capital pairs."""
+# import os
+# print(os.getcwd()) Ez kirakja a fájl working mappáját, és eszerint a fájlunk eggyel feljebbre mutatott.
+#                    De az almappa megadásával (az openben) már jó, és így nem kell mindig lokál géphez igazítani.
 
-
-countries = open(
-    "/home/viktor/CODECOOL/projects/hangman-python-mozsolim/countries-and-capitals.txt", "r")
+countries = open('./hangman-python-mozsolim/countries-and-capitals.txt', 'r')
 list_all = countries.readlines()  # creates the list from the input
 list_all = [i.replace("\n", "") for i in list_all]  # removes the \n line break character
 easy_list = []

@@ -10,17 +10,21 @@ def random_word(game_version):
     #  countries and easy
     if game_version == 1:
         words_list = easy_list[rnd.randint(0, len(easy_list)-1)]
-        word = words_list[rnd.randint(0, 1)]
+        word_to_guess = words_list[0]
+        word_related = words_list[1]
     #  capitals and easy
     if game_version == 2:
         words_list = easy_list[rnd.randint(0, len(easy_list)-1)]
-        word = words_list[rnd.randint(0, 1)]
+        word_to_guess = words_list[1]
+        word_related = words_list[0]
     #  countries and hard
     if game_version == 3:
-        words_list = easy_list[rnd.randint(0, len(easy_list)-1)]
-        word = words_list[rnd.randint(0, 1)]
+        words_list = hard_list[rnd.randint(0, len(hard_list)-1)]
+        word_to_guess = words_list[0]
+        word_related = words_list[1]
     # capitals and hard
     if game_version == 4:
         words_list = hard_list[rnd.randint(0, len(hard_list)-1)]
-        word = words_list[rnd.randint(0, 1)]
-    return game_version, word
+        word_to_guess = words_list[1]
+        word_related = words_list[0]
+    return game_version, word_to_guess, word_related

@@ -29,4 +29,4 @@ def letters(placeholder_init, hangman, attempts, lives):
     # displaying the game status in a user friendly manner
     state = " ".join(placeholders)
     print(state)
-    return hangman, state, attempts, lives
+    return state, hangman, attempts, lives
