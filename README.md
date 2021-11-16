@@ -1,6 +1,6 @@
 # Hangman
 
-## Story of the practice project
+## Story of a practice team project
 
 Let's hang somebody! Implementation of the popular [Hangman](<https://en.wikipedia.org/wiki/Hangman_(game)>)
 game. Add a full fledged game flow with a main menu and optionally some cool graphics
